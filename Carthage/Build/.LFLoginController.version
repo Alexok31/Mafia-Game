@@ -1,0 +1,9 @@
+{
+  "commitish" : "0.3.1",
+  "iOS" : [
+    {
+      "name" : "LFLoginController",
+      "hash" : "bcfc066f55b370adefcbfeab8f783f8d68c5e4014488e9204527a3f1ccb94e78"
+    }
+  ]
+}

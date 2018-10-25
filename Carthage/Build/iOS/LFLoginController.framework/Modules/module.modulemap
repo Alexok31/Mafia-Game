@@ -1,0 +1,11 @@
+framework module LFLoginController {
+  umbrella header "LFLoginController.h"
+
+  export *
+  module * { export * }
+}
+
+module LFLoginController.Swift {
+    header "LFLoginController-Swift.h"
+    requires objc
+}
