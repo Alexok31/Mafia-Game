@@ -39,6 +39,7 @@ class CreateGameController: UIViewController {
     @IBOutlet weak var roomPassword: UITextField!
     
     @IBAction func CreateGameButton(_ sender: Any) {
+        let value = createGameHelper.rolesInRoom(array: rolesInTheGame)
         if value.isEmpty == false && roomName.text?.isEmpty == false {
             FirebaseHelper().handleSendRoles(value, roonName: roomName.text!)
             performSegue(withIdentifier: "goToGame", sender: nil)
@@ -46,8 +47,8 @@ class CreateGameController: UIViewController {
     }
     
     let indentifierCell = "RolesId"
+    let createGameHelper = СreateGameHelper()
     
-    var value = [String : Any]()
     var rolesInTheGame = [String](){
         didSet {
             collectionOfRoles.reloadData()
@@ -65,6 +66,8 @@ class CreateGameController: UIViewController {
 }
 
 
+
+
 extension CreateGameController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -73,7 +76,6 @@ extension CreateGameController: UICollectionViewDelegate, UICollectionViewDataSo
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: indentifierCell, for: indexPath) as! RolesCell
-        value.updateValue(rolesInTheGame[indexPath.row], forKey: "\(indexPath.row)")
         cell.rolesIcon.image = UIImage(named: rolesInTheGame[indexPath.row])
         cell.layer.cornerRadius = cell.frame.height / 2
         

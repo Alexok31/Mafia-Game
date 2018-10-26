@@ -17,8 +17,11 @@
 		422DF995217DF1C9001717C2 /* MafiaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422DF994217DF1C9001717C2 /* MafiaUITests.swift */; };
 		422DF9A3217DF274001717C2 /* PersistentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422DF9A2217DF274001717C2 /* PersistentManager.swift */; };
 		4232A257217F7EBE00288E02 /* СreateGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4232A256217F7EBE00288E02 /* СreateGameController.swift */; };
-		4232A259217F818A00288E02 /*  СreateGamePopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4232A258217F818A00288E02 /*  СreateGamePopover.swift */; };
+		4232A259217F818A00288E02 /* СreateGamePopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4232A258217F818A00288E02 /* СreateGamePopover.swift */; };
 		4232A25C217F9ACB00288E02 /* RolesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4232A25B217F9ACB00288E02 /* RolesCell.swift */; };
+		428141062182655400D59E80 /* RolesInRoomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428141052182655400D59E80 /* RolesInRoomCell.swift */; };
+		42814108218282FF00D59E80 /* СreateGameHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42814107218282FF00D59E80 /* СreateGameHelper.swift */; };
+		4281410A2182887200D59E80 /* RolesStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428141092182887200D59E80 /* RolesStructure.swift */; };
 		42AA6D51217DFA9300CF22B6 /* FirebaseLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AA6D50217DFA9300CF22B6 /* FirebaseLogin.swift */; };
 		42AA6D55217E0C1D00CF22B6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42AA6D54217E0C1D00CF22B6 /* GoogleService-Info.plist */; };
 		42AA6D59217E890E00CF22B6 /* FirebaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AA6D58217E890E00CF22B6 /* FirebaseHelper.swift */; };
@@ -60,8 +63,11 @@
 		422DF996217DF1C9001717C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		422DF9A2217DF274001717C2 /* PersistentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentManager.swift; sourceTree = "<group>"; };
 		4232A256217F7EBE00288E02 /* СreateGameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "СreateGameController.swift"; sourceTree = "<group>"; };
-		4232A258217F818A00288E02 /*  СreateGamePopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " СreateGamePopover.swift"; sourceTree = "<group>"; };
+		4232A258217F818A00288E02 /* СreateGamePopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "СreateGamePopover.swift"; sourceTree = "<group>"; };
 		4232A25B217F9ACB00288E02 /* RolesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolesCell.swift; sourceTree = "<group>"; };
+		428141052182655400D59E80 /* RolesInRoomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolesInRoomCell.swift; sourceTree = "<group>"; };
+		42814107218282FF00D59E80 /* СreateGameHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "СreateGameHelper.swift"; sourceTree = "<group>"; };
+		428141092182887200D59E80 /* RolesStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolesStructure.swift; sourceTree = "<group>"; };
 		42AA6D50217DFA9300CF22B6 /* FirebaseLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseLogin.swift; sourceTree = "<group>"; };
 		42AA6D54217E0C1D00CF22B6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		42AA6D58217E890E00CF22B6 /* FirebaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseHelper.swift; sourceTree = "<group>"; };
@@ -134,6 +140,7 @@
 				422DF971217DF1C6001717C2 /* AppDelegate.swift */,
 				4232A25A217F85DE00288E02 /* Controllers */,
 				42BB3313218120A100DE9942 /* CreateGameService */,
+				4281410B2182888100D59E80 /* Model */,
 				42BB33122181204E00DE9942 /* Fierbase */,
 				42BB33112181202200DE9942 /* CellView */,
 				422DF9A4217DF27E001717C2 /* CoreData */,
@@ -184,9 +191,18 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		4281410B2182888100D59E80 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				428141092182887200D59E80 /* RolesStructure.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		42BB33112181202200DE9942 /* CellView */ = {
 			isa = PBXGroup;
 			children = (
+				428141052182655400D59E80 /* RolesInRoomCell.swift */,
 				4232A25B217F9ACB00288E02 /* RolesCell.swift */,
 			);
 			path = CellView;
@@ -204,7 +220,8 @@
 		42BB3313218120A100DE9942 /* CreateGameService */ = {
 			isa = PBXGroup;
 			children = (
-				4232A258217F818A00288E02 /*  СreateGamePopover.swift */,
+				42814107218282FF00D59E80 /* СreateGameHelper.swift */,
+				4232A258217F818A00288E02 /* СreateGamePopover.swift */,
 			);
 			path = CreateGameService;
 			sourceTree = "<group>";
@@ -399,13 +416,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				422DF974217DF1C6001717C2 /* MainMenuController.swift in Sources */,
-				4232A259217F818A00288E02 /*  СreateGamePopover.swift in Sources */,
+				4232A259217F818A00288E02 /* СreateGamePopover.swift in Sources */,
 				422DF9A3217DF274001717C2 /* PersistentManager.swift in Sources */,
+				4281410A2182887200D59E80 /* RolesStructure.swift in Sources */,
 				42BB331021811FD900DE9942 /* GameBodyController.swift in Sources */,
 				4232A257217F7EBE00288E02 /* СreateGameController.swift in Sources */,
 				422DF972217DF1C6001717C2 /* AppDelegate.swift in Sources */,
 				422DF97A217DF1C6001717C2 /* Mafia.xcdatamodeld in Sources */,
+				42814108218282FF00D59E80 /* СreateGameHelper.swift in Sources */,
 				42AA6D59217E890E00CF22B6 /* FirebaseHelper.swift in Sources */,
+				428141062182655400D59E80 /* RolesInRoomCell.swift in Sources */,
 				4232A25C217F9ACB00288E02 /* RolesCell.swift in Sources */,
 				42AA6D51217DFA9300CF22B6 /* FirebaseLogin.swift in Sources */,
 			);

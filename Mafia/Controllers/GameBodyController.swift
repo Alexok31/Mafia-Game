@@ -12,22 +12,16 @@ class GameBodyController: UIViewController {
     
     
     @IBOutlet weak var rolesInTheGameCoollection: UICollectionView!
-    @IBOutlet weak var nameRoom: UILabel!
+    @IBOutlet weak var nameRoomLabel: UILabel!
     
     var roonName: String?
+    var rolesArray = [String]()
+    var identicalRolesArray = [Int]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        receiveRoom(roomName: roonName!)
+        nameRoomLabel.text = roonName
     }
-    
-    func receiveRoom(roomName: String) {
-        FirebaseHelper().observeRoom(roomName: roomName) { (roomDictionary) in
-            print(roomDictionary)
-        }
-    }
-    
-    
 }
 
 
@@ -35,10 +29,10 @@ class GameBodyController: UIViewController {
 //    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 //        return 5
 //    }
-//    
+//
 //    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 //         return nil
 //    }
-//    
-//    
+//
+//
 //}
