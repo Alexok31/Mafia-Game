@@ -7,7 +7,7 @@
 //
 
 import XCTest
-
+import Pods_Mafia
 class MafiaTests: XCTestCase {
 
     override func setUp() {

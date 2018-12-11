@@ -1,4 +1,6 @@
 PODS:
+  - Alamofire (4.7.3)
+  - DSCircularCollectionView (1.0.3)
   - Firebase/Auth (5.9.0):
     - Firebase/CoreOnly
     - FirebaseAuth (= 5.0.4)
@@ -66,6 +68,7 @@ PODS:
   - GoogleUtilities/UserDefaults (5.3.0):
     - GoogleUtilities/Logger
   - GTMSessionFetcher/Core (1.2.0)
+  - KeychainSwift (13.0.0)
   - leveldb-library (1.20)
   - LFLoginController (0.3.1)
   - nanopb (0.3.8):
@@ -73,16 +76,31 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
+  - NVActivityIndicatorView (4.4.0):
+    - NVActivityIndicatorView/Presenter (= 4.4.0)
+  - NVActivityIndicatorView/Presenter (4.4.0)
+  - R.swift (4.0.0):
+    - R.swift.Library (~> 4.0.0)
+  - R.swift.Library (4.0.0)
+  - TextFieldEffects (1.5.1)
 
 DEPENDENCIES:
+  - Alamofire
+  - DSCircularCollectionView
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
   - Firebase/Storage
+  - KeychainSwift
   - LFLoginController
+  - NVActivityIndicatorView
+  - R.swift
+  - TextFieldEffects
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - DSCircularCollectionView
     - Firebase
     - FirebaseAnalytics
     - FirebaseAuth
@@ -94,11 +112,18 @@ SPEC REPOS:
     - GoogleAppMeasurement
     - GoogleUtilities
     - GTMSessionFetcher
+    - KeychainSwift
     - leveldb-library
     - LFLoginController
     - nanopb
+    - NVActivityIndicatorView
+    - R.swift
+    - R.swift.Library
+    - TextFieldEffects
 
 SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  DSCircularCollectionView: a25c185d1e57ad588e3b50c844c9741302e360d3
   Firebase: 383fa29aca93e371cab776b48a5c66544d3c2003
   FirebaseAnalytics: 831f1f127f4a75698e9875a87bf7e2668730d953
   FirebaseAuth: 504b198ceb3472dca5c65bb95544ea44cfc9439e
@@ -110,10 +135,15 @@ SPEC CHECKSUMS:
   GoogleAppMeasurement: 2b3a023a61239c8d002e6e4fcf4abce8eddce0e0
   GoogleUtilities: 760ccb53b7c7f40f9c02d8c241f76f841a7a6162
   GTMSessionFetcher: 0c4baf0a73acd0041bf9f71ea018deedab5ea84e
+  KeychainSwift: 23d6c16cbc33f20fafa30c3d783241b4b87d998c
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   LFLoginController: ded1e7e1f625d6ae9762faf491d74519ce017f46
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  NVActivityIndicatorView: ec7440a57af2450319d3a4181cca7da6fc127064
+  R.swift: d6a5ec2f55a8441dc0ed9f1f8b37d7d11ae85c66
+  R.swift.Library: c3af34921024333546e23b70e70d0b4e0cffca75
+  TextFieldEffects: 7d372f58aeaf9acd9626bbf962680aef926b085d
 
-PODFILE CHECKSUM: 7a1fc6b345c9d8528e0709818d0056808aba689a
+PODFILE CHECKSUM: 491a3d5d5e3daa86280fba0ed00aee28ad70d056
 
-COCOAPODS: 1.5.2
+COCOAPODS: 1.5.3

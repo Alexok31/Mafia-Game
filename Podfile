@@ -12,5 +12,10 @@ pod 'Firebase/Core'
 pod 'Firebase/Database'
 pod 'Firebase/Auth'
 pod 'Firebase/Storage'
+pod 'Alamofire'
+pod 'R.swift'
+pod 'NVActivityIndicatorView'
+pod 'TextFieldEffects'
+pod 'KeychainSwift'
 
 end

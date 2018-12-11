@@ -8,46 +8,25 @@
 
 import UIKit
 
-class CreateGameController: UIViewController {
+class CreateGameController: UIViewController, UITextFieldDelegate {
 
-    @IBAction func addMafia(_ sender: Any) {
-        let mafia = "Mafia"
-        rolesInTheGame.append(mafia)
-    }
-    @IBAction func addCivilian(_ sender: Any) {
-        let civilian = "Civilian"
-        rolesInTheGame.append(civilian)
-    }
-    @IBAction func addDetective(_ sender: Any) {
-        let detective = "Detective"
-        rolesInTheGame.append(detective)
-    }
-    @IBAction func addDoctor(_ sender: Any) {
-        let doctor = "Doctor"
-        rolesInTheGame.append(doctor)
-    }
-    @IBAction func addProstitute(_ sender: Any) {
-        let prostitute = "Prostitute"
-        rolesInTheGame.append(prostitute)
-    }
-    @IBAction func addManiac(_ sender: Any) {
-        let maniac = "Maniac"
-        rolesInTheGame.append(maniac)
-    }
+    
     @IBOutlet weak var collectionOfRoles: UICollectionView!
     @IBOutlet weak var roomName: UITextField!
     @IBOutlet weak var roomPassword: UITextField!
     
     @IBAction func CreateGameButton(_ sender: Any) {
-        let value = createGameHelper.rolesInRoom(array: rolesInTheGame)
-        if value.isEmpty == false && roomName.text?.isEmpty == false {
-            FirebaseHelper().handleSendRoles(value, roonName: roomName.text!)
+        let rolesInRoom = createGameHelper.rolesInRoom(array: rolesInTheGame)
+        if rolesInRoom.isEmpty == false && roomName.text?.isEmpty == false {
+            sendingToFierbase.handleSendUserInRoom(roonName: roomName.text!)
+            sendingToFierbase.handleSendRolesInRoom(rolesInRoom, roonName: roomName.text!)
             performSegue(withIdentifier: "goToGame", sender: nil)
         }
     }
     
-    let indentifierCell = "RolesId"
+    let indentifierCell = "rolesId"
     let createGameHelper = СreateGameHelper()
+    let sendingToFierbase = SendingToFierbase()
     
     var rolesInTheGame = [String](){
         didSet {
@@ -59,28 +38,46 @@ class CreateGameController: UIViewController {
         super.viewDidLoad()
     }
     
+    
+    @IBAction func addMafia(_ sender: Any) {
+        let mafia = "mafia"
+        rolesInTheGame.append(mafia)
+    }
+    @IBAction func addCivilian(_ sender: Any) {
+        let civilian = "civilian"
+        rolesInTheGame.append(civilian)
+    }
+    @IBAction func addDetective(_ sender: Any) {
+        let detective = "detective"
+        rolesInTheGame.append(detective)
+    }
+    @IBAction func addDoctor(_ sender: Any) {
+        let doctor = "doctor"
+        rolesInTheGame.append(doctor)
+    }
+    @IBAction func addProstitute(_ sender: Any) {
+        let prostitute = "prostitute"
+        rolesInTheGame.append(prostitute)
+    }
+    @IBAction func addManiac(_ sender: Any) {
+        let maniac = "maniac"
+        rolesInTheGame.append(maniac)
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let gameVc = segue.destination as? GameBodyController
         gameVc!.roonName = roomName.text!
     }
-}
-
-
-
-
-extension CreateGameController: UICollectionViewDelegate, UICollectionViewDataSource {
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return rolesInTheGame.count
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if touches.first != nil {
+            view.endEditing(true)
+        }
+        super.touchesBegan(touches, with: event)
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: indentifierCell, for: indexPath) as! RolesCell
-        cell.rolesIcon.image = UIImage(named: rolesInTheGame[indexPath.row])
-        cell.layer.cornerRadius = cell.frame.height / 2
-        
-        return cell
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
     }
-    
-    
 }

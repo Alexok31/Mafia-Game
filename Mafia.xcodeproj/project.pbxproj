@@ -17,14 +17,30 @@
 		422DF995217DF1C9001717C2 /* MafiaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422DF994217DF1C9001717C2 /* MafiaUITests.swift */; };
 		422DF9A3217DF274001717C2 /* PersistentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422DF9A2217DF274001717C2 /* PersistentManager.swift */; };
 		4232A257217F7EBE00288E02 /* СreateGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4232A256217F7EBE00288E02 /* СreateGameController.swift */; };
-		4232A259217F818A00288E02 /* СreateGamePopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4232A258217F818A00288E02 /* СreateGamePopover.swift */; };
 		4232A25C217F9ACB00288E02 /* RolesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4232A25B217F9ACB00288E02 /* RolesCell.swift */; };
+		423E600B2187C0B900B6ED6A /* GameBodyHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423E600A2187C0B900B6ED6A /* GameBodyHelper.swift */; };
+		423E600D2187D79300B6ED6A /* FindGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423E600C2187D79300B6ED6A /* FindGameController.swift */; };
+		423E60102188A93E00B6ED6A /* GameBodyCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423E600F2188A93E00B6ED6A /* GameBodyCollectionView.swift */; };
+		423E60122188B41900B6ED6A /* FindRoomsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423E60112188B41900B6ED6A /* FindRoomsCell.swift */; };
+		423E60142188C5E500B6ED6A /* RolesInListGameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423E60132188C5E500B6ED6A /* RolesInListGameCell.swift */; };
+		4270143A21BFD702004EEA1E /* SendingToFierbase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4270143921BFD702004EEA1E /* SendingToFierbase.swift */; };
+		4270143C21BFD94E004EEA1E /* FirebaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4270143B21BFD94E004EEA1E /* FirebaseHelper.swift */; };
+		4270143E21C01540004EEA1E /* RemoveToFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4270143D21C01540004EEA1E /* RemoveToFirebase.swift */; };
 		428141062182655400D59E80 /* RolesInRoomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428141052182655400D59E80 /* RolesInRoomCell.swift */; };
 		42814108218282FF00D59E80 /* СreateGameHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42814107218282FF00D59E80 /* СreateGameHelper.swift */; };
 		4281410A2182887200D59E80 /* RolesStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428141092182887200D59E80 /* RolesStructure.swift */; };
+		429E609121BE51BE00AD6C10 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 429E609021BE51BE00AD6C10 /* GoogleService-Info.plist */; };
+		429E609521BE682500AD6C10 /* CircleLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429E609421BE682500AD6C10 /* CircleLayout.swift */; };
+		429E609821BE6EF800AD6C10 /* PayingFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429E609721BE6EF800AD6C10 /* PayingFieldCell.swift */; };
+		429E609A21BE7BEB00AD6C10 /* CreateGameCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429E609921BE7BEB00AD6C10 /* CreateGameCollectionView.swift */; };
+		429E609C21BE7C2B00AD6C10 /* FindGameCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429E609B21BE7C2B00AD6C10 /* FindGameCollectionView.swift */; };
+		429E609F21BE7CB700AD6C10 /* FindGameTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429E609E21BE7CB700AD6C10 /* FindGameTableView.swift */; };
 		42AA6D51217DFA9300CF22B6 /* FirebaseLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AA6D50217DFA9300CF22B6 /* FirebaseLogin.swift */; };
-		42AA6D55217E0C1D00CF22B6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42AA6D54217E0C1D00CF22B6 /* GoogleService-Info.plist */; };
-		42AA6D59217E890E00CF22B6 /* FirebaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AA6D58217E890E00CF22B6 /* FirebaseHelper.swift */; };
+		42AA6D59217E890E00CF22B6 /* ObserveToFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42AA6D58217E890E00CF22B6 /* ObserveToFirebase.swift */; };
+		42B4C1C0218354B30041BE06 /* UserStructure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B4C1BF218354B30041BE06 /* UserStructure.swift */; };
+		42B4C1C2218355B30041BE06 /* GetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B4C1C1218355B30041BE06 /* GetData.swift */; };
+		42B4C1C421835CD50041BE06 /* MyProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B4C1C321835CD50041BE06 /* MyProfileController.swift */; };
+		42B4C1C62183877D0041BE06 /* FirebaseMyProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B4C1C52183877D0041BE06 /* FirebaseMyProfile.swift */; };
 		42BB331021811FD900DE9942 /* GameBodyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BB330F21811FD900DE9942 /* GameBodyController.swift */; };
 		45A36A02EFFF9C28CBB49E21 /* Pods_Mafia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E53041921634AB36351AE6DA /* Pods_Mafia.framework */; };
 /* End PBXBuildFile section */
@@ -63,14 +79,30 @@
 		422DF996217DF1C9001717C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		422DF9A2217DF274001717C2 /* PersistentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentManager.swift; sourceTree = "<group>"; };
 		4232A256217F7EBE00288E02 /* СreateGameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "СreateGameController.swift"; sourceTree = "<group>"; };
-		4232A258217F818A00288E02 /* СreateGamePopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "СreateGamePopover.swift"; sourceTree = "<group>"; };
 		4232A25B217F9ACB00288E02 /* RolesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolesCell.swift; sourceTree = "<group>"; };
+		423E600A2187C0B900B6ED6A /* GameBodyHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBodyHelper.swift; sourceTree = "<group>"; };
+		423E600C2187D79300B6ED6A /* FindGameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindGameController.swift; sourceTree = "<group>"; };
+		423E600F2188A93E00B6ED6A /* GameBodyCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBodyCollectionView.swift; sourceTree = "<group>"; };
+		423E60112188B41900B6ED6A /* FindRoomsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindRoomsCell.swift; sourceTree = "<group>"; };
+		423E60132188C5E500B6ED6A /* RolesInListGameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolesInListGameCell.swift; sourceTree = "<group>"; };
+		4270143921BFD702004EEA1E /* SendingToFierbase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendingToFierbase.swift; sourceTree = "<group>"; };
+		4270143B21BFD94E004EEA1E /* FirebaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseHelper.swift; sourceTree = "<group>"; };
+		4270143D21C01540004EEA1E /* RemoveToFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveToFirebase.swift; sourceTree = "<group>"; };
 		428141052182655400D59E80 /* RolesInRoomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolesInRoomCell.swift; sourceTree = "<group>"; };
 		42814107218282FF00D59E80 /* СreateGameHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "СreateGameHelper.swift"; sourceTree = "<group>"; };
 		428141092182887200D59E80 /* RolesStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolesStructure.swift; sourceTree = "<group>"; };
+		429E609021BE51BE00AD6C10 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		429E609421BE682500AD6C10 /* CircleLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleLayout.swift; sourceTree = "<group>"; };
+		429E609721BE6EF800AD6C10 /* PayingFieldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayingFieldCell.swift; sourceTree = "<group>"; };
+		429E609921BE7BEB00AD6C10 /* CreateGameCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGameCollectionView.swift; sourceTree = "<group>"; };
+		429E609B21BE7C2B00AD6C10 /* FindGameCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindGameCollectionView.swift; sourceTree = "<group>"; };
+		429E609E21BE7CB700AD6C10 /* FindGameTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindGameTableView.swift; sourceTree = "<group>"; };
 		42AA6D50217DFA9300CF22B6 /* FirebaseLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseLogin.swift; sourceTree = "<group>"; };
-		42AA6D54217E0C1D00CF22B6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		42AA6D58217E890E00CF22B6 /* FirebaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseHelper.swift; sourceTree = "<group>"; };
+		42AA6D58217E890E00CF22B6 /* ObserveToFirebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserveToFirebase.swift; sourceTree = "<group>"; };
+		42B4C1BF218354B30041BE06 /* UserStructure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStructure.swift; sourceTree = "<group>"; };
+		42B4C1C1218355B30041BE06 /* GetData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetData.swift; sourceTree = "<group>"; };
+		42B4C1C321835CD50041BE06 /* MyProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileController.swift; sourceTree = "<group>"; };
+		42B4C1C52183877D0041BE06 /* FirebaseMyProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseMyProfile.swift; sourceTree = "<group>"; };
 		42BB330F21811FD900DE9942 /* GameBodyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBodyController.swift; sourceTree = "<group>"; };
 		B43B8693053A08976B35BECD /* Pods-Mafia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mafia.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mafia/Pods-Mafia.release.xcconfig"; sourceTree = "<group>"; };
 		C2CCFC3CC124535CAB09BAC5 /* Pods-Mafia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mafia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mafia/Pods-Mafia.debug.xcconfig"; sourceTree = "<group>"; };
@@ -139,15 +171,14 @@
 			children = (
 				422DF971217DF1C6001717C2 /* AppDelegate.swift */,
 				4232A25A217F85DE00288E02 /* Controllers */,
-				42BB3313218120A100DE9942 /* CreateGameService */,
-				4281410B2182888100D59E80 /* Model */,
-				42BB33122181204E00DE9942 /* Fierbase */,
-				42BB33112181202200DE9942 /* CellView */,
+				429E609621BE6BE200AD6C10 /* View */,
+				4281410B2182888100D59E80 /* Model Data */,
+				429E609221BE54BC00AD6C10 /* Service */,
 				422DF9A4217DF27E001717C2 /* CoreData */,
 				422DF975217DF1C6001717C2 /* Main.storyboard */,
 				422DF97B217DF1C8001717C2 /* Assets.xcassets */,
 				422DF97D217DF1C8001717C2 /* LaunchScreen.storyboard */,
-				42AA6D54217E0C1D00CF22B6 /* GoogleService-Info.plist */,
+				429E609021BE51BE00AD6C10 /* GoogleService-Info.plist */,
 				422DF980217DF1C8001717C2 /* Info.plist */,
 				422DF978217DF1C6001717C2 /* Mafia.xcdatamodeld */,
 			);
@@ -187,23 +218,87 @@
 				422DF973217DF1C6001717C2 /* MainMenuController.swift */,
 				4232A256217F7EBE00288E02 /* СreateGameController.swift */,
 				42BB330F21811FD900DE9942 /* GameBodyController.swift */,
+				423E600C2187D79300B6ED6A /* FindGameController.swift */,
+				42B4C1C321835CD50041BE06 /* MyProfileController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		4281410B2182888100D59E80 /* Model */ = {
+		423E600E2188A88F00B6ED6A /* GameBodyService */ = {
+			isa = PBXGroup;
+			children = (
+				423E600A2187C0B900B6ED6A /* GameBodyHelper.swift */,
+			);
+			path = GameBodyService;
+			sourceTree = "<group>";
+		};
+		4270143821BFD6A2004EEA1E /* RoomHelper */ = {
+			isa = PBXGroup;
+			children = (
+				42AA6D58217E890E00CF22B6 /* ObserveToFirebase.swift */,
+				4270143921BFD702004EEA1E /* SendingToFierbase.swift */,
+				4270143D21C01540004EEA1E /* RemoveToFirebase.swift */,
+			);
+			path = RoomHelper;
+			sourceTree = "<group>";
+		};
+		4281410B2182888100D59E80 /* Model Data */ = {
 			isa = PBXGroup;
 			children = (
 				428141092182887200D59E80 /* RolesStructure.swift */,
+				42B4C1BF218354B30041BE06 /* UserStructure.swift */,
 			);
-			path = Model;
+			path = "Model Data";
+			sourceTree = "<group>";
+		};
+		429E609221BE54BC00AD6C10 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				42BB3313218120A100DE9942 /* CreateGameService */,
+				423E600E2188A88F00B6ED6A /* GameBodyService */,
+				42BB33122181204E00DE9942 /* Fierbase */,
+				429E609321BE54D400AD6C10 /* Get */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		429E609321BE54D400AD6C10 /* Get */ = {
+			isa = PBXGroup;
+			children = (
+				42B4C1C1218355B30041BE06 /* GetData.swift */,
+			);
+			path = Get;
+			sourceTree = "<group>";
+		};
+		429E609621BE6BE200AD6C10 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				42BB33112181202200DE9942 /* CellView */,
+				429E609D21BE7C5C00AD6C10 /* FindGameView */,
+				423E600F2188A93E00B6ED6A /* GameBodyCollectionView.swift */,
+				429E609921BE7BEB00AD6C10 /* CreateGameCollectionView.swift */,
+				429E609421BE682500AD6C10 /* CircleLayout.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		429E609D21BE7C5C00AD6C10 /* FindGameView */ = {
+			isa = PBXGroup;
+			children = (
+				429E609B21BE7C2B00AD6C10 /* FindGameCollectionView.swift */,
+				429E609E21BE7CB700AD6C10 /* FindGameTableView.swift */,
+			);
+			path = FindGameView;
 			sourceTree = "<group>";
 		};
 		42BB33112181202200DE9942 /* CellView */ = {
 			isa = PBXGroup;
 			children = (
+				423E60132188C5E500B6ED6A /* RolesInListGameCell.swift */,
 				428141052182655400D59E80 /* RolesInRoomCell.swift */,
 				4232A25B217F9ACB00288E02 /* RolesCell.swift */,
+				423E60112188B41900B6ED6A /* FindRoomsCell.swift */,
+				429E609721BE6EF800AD6C10 /* PayingFieldCell.swift */,
 			);
 			path = CellView;
 			sourceTree = "<group>";
@@ -211,8 +306,10 @@
 		42BB33122181204E00DE9942 /* Fierbase */ = {
 			isa = PBXGroup;
 			children = (
+				4270143B21BFD94E004EEA1E /* FirebaseHelper.swift */,
+				4270143821BFD6A2004EEA1E /* RoomHelper */,
 				42AA6D50217DFA9300CF22B6 /* FirebaseLogin.swift */,
-				42AA6D58217E890E00CF22B6 /* FirebaseHelper.swift */,
+				42B4C1C52183877D0041BE06 /* FirebaseMyProfile.swift */,
 			);
 			path = Fierbase;
 			sourceTree = "<group>";
@@ -221,7 +318,6 @@
 			isa = PBXGroup;
 			children = (
 				42814107218282FF00D59E80 /* СreateGameHelper.swift */,
-				4232A258217F818A00288E02 /* СreateGamePopover.swift */,
 			);
 			path = CreateGameService;
 			sourceTree = "<group>";
@@ -341,7 +437,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				422DF97F217DF1C8001717C2 /* LaunchScreen.storyboard in Resources */,
-				42AA6D55217E0C1D00CF22B6 /* GoogleService-Info.plist in Resources */,
+				429E609121BE51BE00AD6C10 /* GoogleService-Info.plist in Resources */,
 				422DF97C217DF1C8001717C2 /* Assets.xcassets in Resources */,
 				422DF977217DF1C6001717C2 /* Main.storyboard in Resources */,
 			);
@@ -371,17 +467,29 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Mafia/Pods-Mafia-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/DSCircularCollectionView/DSCircularCollectionView.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/KeychainSwift/KeychainSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/LFLoginController/LFLoginController.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
+				"${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DSCircularCollectionView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LFLoginController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TextFieldEffects.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -415,16 +523,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4270143C21BFD94E004EEA1E /* FirebaseHelper.swift in Sources */,
+				423E60142188C5E500B6ED6A /* RolesInListGameCell.swift in Sources */,
 				422DF974217DF1C6001717C2 /* MainMenuController.swift in Sources */,
-				4232A259217F818A00288E02 /* СreateGamePopover.swift in Sources */,
+				42B4C1C2218355B30041BE06 /* GetData.swift in Sources */,
+				42B4C1C0218354B30041BE06 /* UserStructure.swift in Sources */,
+				429E609821BE6EF800AD6C10 /* PayingFieldCell.swift in Sources */,
 				422DF9A3217DF274001717C2 /* PersistentManager.swift in Sources */,
 				4281410A2182887200D59E80 /* RolesStructure.swift in Sources */,
+				42B4C1C421835CD50041BE06 /* MyProfileController.swift in Sources */,
+				429E609C21BE7C2B00AD6C10 /* FindGameCollectionView.swift in Sources */,
+				423E600B2187C0B900B6ED6A /* GameBodyHelper.swift in Sources */,
+				423E60122188B41900B6ED6A /* FindRoomsCell.swift in Sources */,
+				429E609F21BE7CB700AD6C10 /* FindGameTableView.swift in Sources */,
+				429E609A21BE7BEB00AD6C10 /* CreateGameCollectionView.swift in Sources */,
+				42B4C1C62183877D0041BE06 /* FirebaseMyProfile.swift in Sources */,
 				42BB331021811FD900DE9942 /* GameBodyController.swift in Sources */,
+				4270143A21BFD702004EEA1E /* SendingToFierbase.swift in Sources */,
 				4232A257217F7EBE00288E02 /* СreateGameController.swift in Sources */,
+				4270143E21C01540004EEA1E /* RemoveToFirebase.swift in Sources */,
+				423E600D2187D79300B6ED6A /* FindGameController.swift in Sources */,
 				422DF972217DF1C6001717C2 /* AppDelegate.swift in Sources */,
 				422DF97A217DF1C6001717C2 /* Mafia.xcdatamodeld in Sources */,
+				423E60102188A93E00B6ED6A /* GameBodyCollectionView.swift in Sources */,
+				429E609521BE682500AD6C10 /* CircleLayout.swift in Sources */,
 				42814108218282FF00D59E80 /* СreateGameHelper.swift in Sources */,
-				42AA6D59217E890E00CF22B6 /* FirebaseHelper.swift in Sources */,
+				42AA6D59217E890E00CF22B6 /* ObserveToFirebase.swift in Sources */,
 				428141062182655400D59E80 /* RolesInRoomCell.swift in Sources */,
 				4232A25C217F9ACB00288E02 /* RolesCell.swift in Sources */,
 				42AA6D51217DFA9300CF22B6 /* FirebaseLogin.swift in Sources */,
